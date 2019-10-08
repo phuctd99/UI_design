@@ -1,0 +1,154 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: SFproDisplay;
+    background: #111;
+    color: #ffffff;
+}
+@font-face{
+	src:url("/fonts/FontsFree-Net-SFProDisplay-Regular.ttf");
+	font-family: SFproDisplay;
+}
+header{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    
+    height: 56px;
+    position: fixed;
+    z-index: 100;
+}
+.container{
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	max-width: 1300px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.logo{
+    margin: 12px 20px;
+}
+.navigation{
+    color: #9b9b9b;
+    
+}
+.navigation ul{
+    margin: 0px;
+}
+.navigation ul li{
+    list-style: none;
+    float: left;
+    margin: auto 20px;
+    height: 54px;
+    align-content: center;
+}
+.navigation ul li:before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;       
+}
+.navigation ul li:hover{
+    cursor: pointer;
+    border-bottom: 4px solid Rgb(23, 129, 194);
+}
+.user-action ul li{
+    list-style: none;
+    float: left;
+    margin: auto 20px;
+}
+.main-slide{
+    width: 100%;
+    height: 500px;
+}
+.main-slide >img{
+    height: 500px;
+    
+}
+.slide-content{
+    margin: 0px 0px 0px 60px;
+    width:inherit;
+    position: absolute;
+    top:330px;
+    max-width: 1300px;
+}
+.xem{
+    position: relative;
+    width: 116px;
+    top:420px;
+    float: right;
+    font-size: x-large;
+    font-weight: bold;
+    background: #111;
+    color: #ffffff;
+    margin-right: 40px;
+}
+.xem:hover{
+    cursor: pointer;
+   
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+}
+.block{
+    display: block;
+    height: 340px;
+    margin: 60px 0px;
+}
+.block-title{
+    margin: 20px 0px;
+    font-weight: bold;
+    font-size: 24px;
+}
+.block-content{
+    display: flex;
+    height:270px;
+    justify-content: space-between;
+}
+.block-element{
+    width:15%;
+    
+
+}
+.block-element > img{
+    width: -webkit-fill-available;
+    border-radius: 9px;
+}
+footer{
+    width: 100%;
+    background: black;
+    color:#9b9b9b;
+}
+footer > .container{
+    display: flex;
+    justify-content: space-between;
+}
+.mid-footer{
+    width: 55%;
+}
+.right-footer{
+    width:25%;
+}
+.menu1{
+    display: inline-block;
+    padding: 0px;
+}
+.menu2{
+    display: inline-block;
+    float: right;
+}
+.menu1 > li{
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+}
+.menu2 > li{
+    list-style: none;
+    float: left;
+    margin: auto 10px;
+}
+
+
