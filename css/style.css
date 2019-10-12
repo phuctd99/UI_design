@@ -1,6 +1,9 @@
-body{
+* {
     margin: 0px;
     padding: 0px;
+}
+body{
+    
     font-family: SFproDisplay;
     background: #111;
     color: #ffffff;
@@ -53,11 +56,15 @@ header{
 .navigation ul li:hover{
     cursor: pointer;
     border-bottom: 4px solid Rgb(23, 129, 194);
+    color: Rgb(23, 129, 194);
+}
+.user-action{
+    padding-top: 15px;
 }
 .user-action ul li{
     list-style: none;
     float: left;
-    margin: auto 20px;
+    margin: auto 20px; 
 }
 .main-slide{
     width: 100%;
@@ -95,7 +102,6 @@ header{
 }
 .block{
     display: block;
-    height: 340px;
     margin: 60px 0px;
 }
 .block-title{
@@ -105,13 +111,17 @@ header{
 }
 .block-content{
     display: flex;
-    height:270px;
     justify-content: space-between;
 }
 .block-element{
     width:15%;
-    
-
+}
+.block-element-spe{
+    width: 24%;
+}
+.block-element-spe >img{
+    width: 100%;
+    border-radius: 9px;
 }
 .block-element > img{
     width: -webkit-fill-available;
@@ -121,6 +131,8 @@ footer{
     width: 100%;
     background: black;
     color:#9b9b9b;
+    padding: 40px 0;
+   
 }
 footer > .container{
     display: flex;
@@ -152,3 +164,54 @@ footer > .container{
 }
 
 
+
+
+
+
+
+#main-content{
+    padding: 55px 0px 30px;
+}
+.form-area{
+    margin: 115px auto 0;
+    text-align: center;
+}
+.login{
+    margin: 0 auto;
+    max-width: 380px;
+}
+.inner{
+    background:#1F1F1F;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 50px auto;
+}
+.form-group input{
+    height: 35px;
+    width: 73%;
+    margin: 6px auto;
+    border-radius: 6px;
+    outline: none;
+    padding-left: 10px;
+}
+.bt-group{
+    margin: 40px auto;
+}
+.btn{
+    width: 76%;
+    height: 35px;
+    margin: 5px auto;
+    border-radius: 6px;
+    border:none;
+    color: #ffffff;
+}
+.btn-login{
+    background: orangered;
+    
+}
+.btn-facebook{
+    background: #3B5998;
+}
+.btn-google{
+    background: #DD4B39;
+}
