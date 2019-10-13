@@ -8,10 +8,51 @@ body{
     background: #111;
     color: #ffffff;
 }
+a{
+    text-decoration: none;
+    color: #9b9b9b;
+}
 @font-face{
 	src:url("/fonts/FontsFree-Net-SFProDisplay-Regular.ttf");
 	font-family: SFproDisplay;
 }
+
+#BTTbutton {
+    display: inline-block;
+    background-color: #007bff69;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #BTTbutton::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #BTTbutton:hover {
+    cursor: pointer;
+    background-color: rgb(23, 129, 194);
+  }
+  #BTTbutton:active {
+    background-color: #555;
+  }
+  #BTTbutton.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
 header{
     width:100%;
     display: flex;
@@ -32,6 +73,10 @@ header{
 }
 .logo{
     margin: 12px 20px;
+}
+.menu_bar{
+    display: none;
+    cursor: pointer;
 }
 .navigation{
     color: #9b9b9b;
@@ -56,6 +101,9 @@ header{
 .navigation ul li:hover{
     cursor: pointer;
     border-bottom: 4px solid Rgb(23, 129, 194);
+    
+}
+.navigation ul li:hover > a{
     color: Rgb(23, 129, 194);
 }
 .user-action{
@@ -66,29 +114,48 @@ header{
     float: left;
     margin: auto 20px; 
 }
+
+.main_content{
+    padding: 25px 0px 30px;
+}
 .main-slide{
     width: 100%;
-    height: 500px;
+    height: 90%;
 }
-.main-slide >img{
-    height: 500px;
-    
+.slide-image{
+    width: 100%;
+    height: 100%;
+    max-height: 550px;
 }
 .slide-content{
-    margin: 0px 0px 0px 60px;
     width:inherit;
     position: absolute;
-    top:330px;
+    top:420px;
     max-width: 1300px;
+    background: rgba(0, 0, 0, 0.5);
+    
+    padding: 30px 0;
+}
+.ct-bn-1{
+    font-size: 32px;
+    margin: auto 20px;
+}
+.ct-bn-2{
+    margin: auto 20px;
+    line-height: 25px;
+}
+.ct-bn-3{
+    margin: auto 20px;
+    font-size: 20px;
 }
 .xem{
     position: relative;
     width: 116px;
-    top:420px;
+    top:475px;
     float: right;
     font-size: x-large;
     font-weight: bold;
-    background: #111;
+    background: rgba(0, 0, 0, 0.5);
     color: #ffffff;
     margin-right: 40px;
 }
@@ -104,6 +171,15 @@ header{
     display: block;
     margin: 60px 0px;
 }
+.box-icon{
+    position: absolute;
+    background: Rgb(23, 129, 194);
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    color:#ffffff !important;
+}
 .block-title{
     margin: 20px 0px;
     font-weight: bold;
@@ -112,19 +188,49 @@ header{
 .block-content{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-.block-element{
+.block-content a{
+    display: contents;
+}
+.block-element {
     width:15%;
+    overflow: hidden;
 }
 .block-element-spe{
-    width: 24%;
+    width: 22%;
+    overflow: hidden;
 }
 .block-element-spe >img{
     width: 100%;
     border-radius: 9px;
+    
 }
+.block-element-spe:hover > p{
+    text-align: center;
+   color: Rgb(23, 129, 194);
+   font-weight: bold;
+}
+.block-element-spe:hover{
+    transform: scale(1.05);
+    transition: transform 1s ease;
+    cursor: pointer;
+    box-shadow:  0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+}
+.block-element:hover{
+    transform: scale(1.05);
+    transition: transform 1s ease;
+    cursor: pointer;
+    box-shadow:  0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+}
+.block-element:hover > p{
+    text-align: center;
+   color: Rgb(23, 129, 194);
+   font-weight: bold;
+}
+
 .block-element > img{
-    width: -webkit-fill-available;
+    width: 100%;
     border-radius: 9px;
 }
 footer{
@@ -141,8 +247,14 @@ footer > .container{
 .mid-footer{
     width: 55%;
 }
+.mid-footer p{
+    line-height: 20px;
+}
 .right-footer{
     width:25%;
+}
+.menu{
+    margin-bottom: 10px;
 }
 .menu1{
     display: inline-block;
@@ -155,14 +267,28 @@ footer > .container{
 .menu1 > li{
     list-style: none;
     float: left;
-    margin-right: 10px;
+    margin-right: 14px;
+    padding: 5px;
+}
+.menu1 li:hover{
+    cursor: pointer;
+    background: Rgb(23, 129, 194);
+    border-radius: 6px;
+    color: #ffffff;
 }
 .menu2 > li{
     list-style: none;
     float: left;
     margin: auto 10px;
 }
-
+.ct-ft{
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 4px 0px;
+    background: Rgb(23, 129, 194);
+    border-radius: 10px;
+    color: #ffffff;
+}
 
 
 
@@ -170,7 +296,7 @@ footer > .container{
 
 
 #main-content{
-    padding: 55px 0px 30px;
+    padding: 55px 0px 80px;
 }
 .form-area{
     margin: 115px auto 0;
@@ -215,3 +341,7 @@ footer > .container{
 .btn-google{
     background: #DD4B39;
 }
+
+
+
+

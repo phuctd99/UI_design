@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UI design</title>
+    <link rel="stylesheet" type="text/css" href="css/watch.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <script src="./js/myjs.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+</head>
+<body>
+        <header>
+                <div class="logo"><img alt="" src="./images/logo.png"/></div>
+                <div class="menu_bar">
+                        <i class="fas fa-bars" id="menu"></i>
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="./index.html">Trang chủ</a></li>
+                        <li><a href="./index.html">Mới nhất</a></li>
+                        <li><a href="./index.html">Xem nhiều nhất</a></li>
+                        <li class="hid"><a href="./index.html">Phim hành động</a></li>
+                        <li class="hid"><a href="./index.html">Phim viễn tưởng</a></li>
+                        <li class="hid"><a href="./index.html">Phim kinh dị</a></li>
+                        <li class="hid h1"><a href="./index.html">Phim hài hước</a></li>
+                        <li class="hid h1"><a href="./index.html">Phim tình cảm</a></li>
+                        <li class="hid h1"><a href="./index.html">Phim khoa học</a></li>
+                        <li class="hid h1"><a href="./index.html">Phim hoạt hình</a></li>
+                    </ul>
+                </div>
+                <div class="user-action">
+                    <ul>
+                        <li><i class="fas fa-search"></i></li>
+                        <li><a href="./login.html">Đăng nhập</a></li>
+                        <li>    </li>
+                    </ul>
+                </div>
+        
+            </header>
+    <section class="mainBody">
+            <div class="container">
+                <div class="player">
+                    <video width="100%" controls>
+                        <source src="video/video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="playerFooter">
+                    <h2 style="color: white;">Tập phim</h2>
+                    <ul class="episodes">
+                        <li><button class="btn active">Tập 1</button></li>
+                        <li><button class="btn">Tập 2</button></li>
+                        <li><button class="btn">Tập 3</button></li>
+                        <li><button class="btn">Tập 4</button></li>
+                        <li><button class="btn">Tập 5</button></li>
+                        <li><button class="btn">Tập 6</button></li>
+                        <li><button class="btn">Tập 7</button></li>
+                        <li><button class="btn">Tập 8</button></li>
+                        <li><button class="btn">Tập 9</button></li>
+                        <li><button class="btn">Tập 10</button></li>
+                        <li><button class="btn">Tập 11</button></li>
+                        <li><button class="btn">Tập 12</button></li>
+                        <li><button class="btn">Tập 13</button></li>
+                        <li><button class="btn">Tập 14</button></li>
+                        <li><button class="btn">Tập 15</button></li>
+                        <li><button class="btn">Tập 16</button></li>
+                        <li><button class="btn">Tập 17</button></li>
+                        <li><button class="btn">Tập 18</button></li>
+                        <li><button class="btn">Tập 19</button></li>
+                        <li><button class="btn">Tập 20</button></li>
+                        <li><button class="btn">Tập 21</button></li>
+                        <li><button class="btn">Tập 22</button></li>
+                        <li><button class="btn">Tập 23</button></li>
+                        <li><button class="btn">Tập 24</button></li>
+                        <li><button class="btn">Tập 25</button></li>
+                        <li><button class="btn">Tập 26</button></li>
+                        <li><button class="btn">Tập 27</button></li>
+                        <li><button class="btn">Tập 28</button></li>
+                        <li><button class="btn">Tập 29</button></li>
+                        <li><button class="btn">Tập 30</button></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+                <div class="filmInfo">
+                    <div class="filmImg" >
+                        <img src="images/films/nguoi-ban-gai-toi-khong-the-yeu.jpg" width="100%" height="256px">
+                    </div>
+                    <div class="filmDescribe">
+                        <p class="filmname">Người bạn gái tôi không thể yêu</p>
+                        <ul class="extraButton">
+                            <li><button class="btn follow" ><i class="fas fa-heart"></i> <p id="btn">Theo dõi</p></button></li>
+                            <li><button class="btn facebook" ><i class="fab fa-facebook-square"></i> <p id="btn">Chia sẻ</p></button></li>
+                            <li><button class="btn report" ><i class="fas fa-exclamation-triangle"></i> <p id="btn">Báo cáo</p></button></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                        <div class="describe">
+                            <p style="color: white; font-weight: 800; margin-bottom: 10px;">Nội dung</p>
+                            <p style="text-align: justify;">Người Bạn Gái Tôi Không Thể Yêu là bộ phim tình cảm lãng mạn của
+                                Trung Quốc được FPT Play mua
+                                bản quyền phát song song và được cập nhật vào tối thứ 3 hàng tuần.
+                                Người Bạn Gái Tôi Không Thể Yêu xoanh quanh Đinh Tiểu Nhu (Kiều Hân), sau một lần bị hiểu
+                                lầm vô tình bị một người phụ nữ nguyền rủa một lời nguyền tai quái rằng cả đời sẽ không có
+                                được hạnh phúc. Không ngờ lời nguyền rủa đó lại trở thành sự thật. Từ đó về sau, bất kỳ mối
+                                tình nào của cô đều kết thúc bằng lời chia tay của người bạn trai. Tệ hại hơn nữa, anh chàng
+                                đó sẽ tìm được tình yêu đích thực của đời mình ngay sau đó. Quá chán nản, sau khi kết thúc
+                                với chàng trai thứ 30, Đinh Tiểu Nhu được bạn giới thiệu tham gia một bữa tiệc nhỏ mang tên
+                                “Lí do tôi không thể yêu đương”. Tại đây, cô gặp Trì Tín (Hứa Ngụy Châu) - một MC truyền
+                                hình ngoại cảnh và tham gia vào cuộc chơi “yêu để tìm người yêu mới” do anh chàng sắp đặt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="filmDetail">
+                        <table>
+                            <tr>
+                                <th>Số tập</th>
+                                <td>30/30</td>
+                            </tr>
+                            <tr>
+                                <th>Thời lượng</th>
+                                <td>45 phút</td>
+                            </tr>
+                            <tr>
+                                <th>Đạo diễn</th>
+                                <td>Vũ Trung Trung</td>
+                            </tr>
+                            <tr>
+                                <th>Diễn viên</th>
+                                <td>Hứa Ngụy Châu, Kiều Hân, Châu Nghệ Hiên</td>
+                            </tr>
+                            <tr>
+                                <th>Quốc gia</th>
+                                <td>China</td>
+                            </tr>
+                            <tr>
+                                <th>Thể loại</th>
+                                <td>Hoa ngữ</td>
+                            </tr>
+                            <tr>
+                                <th>Phát hành</th>
+                                <td>8/10/2019</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="filmComment">
+                    <h3 style="color: white;">Bình luận</h3>
+                    <div class="commentContent">
+                        <div class="commentHeader">
+                            <div>4 bình luận</div>
+                            <div>
+                                <label for="sort">Sắp xếp theo: </label>
+                                <select class="sort">
+                                    <option>Mới nhất</option>
+                                    <option>Nhiều like nhất</option>
+                                    <option>Cũ nhất</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="commentPost">
+                            <div class="userImg">
+                                <img src="images/users/user0.jpg" alt="" width="100%">
+                            </div>
+                            <div class="commentInput">
+                                <div class="commentGroup">
+                                    <div style="width: 96%;"><input type="text" placeholder="Viết bình luận"></div>
+                                    <div><button class="btn"><i class="fas fa-paper-plane"></i></button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="commentList">
+                            <li class="comment">
+                                <div class="userImg">
+                                    <img src="images/users/user1.jpg" width="100%">
+                                </div>
+                                <div class="commentText">
+                                    <div class="userName">
+                                        <div>
+                                            <h4>Trần Duy Phúc</h4>
+                                        </div>
+                                        <div><small>khoảng 2 phút trước</small></div>
+                                    </div>
+                                    <div class="content">
+                                        <p>Hong biết làm gì giết thời gian chờ đến 6g sáng cả :((( nôn phim quá rồi nè</p>
+                                    </div>
+                                    <div class="buttons">
+                                        <button class="btn"><i class="fas fa-thumbs-up"></i> 40</button>
+                                        <button class="btn"><i class="fas fa-flag"></i></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="comment">
+                                <div class="userImg">
+                                    <img src="images/users/user0.jpg" width="100%">
+                                </div>
+                                <div class="commentText">
+                                    <div class="userName">
+                                        <div>
+                                            <h4>Nguyễn Tuấn Linh</h4>
+                                        </div>
+                                        <div><small>khoảng 30 phút trước</small></div>
+                                    </div>
+                                    <div class="content">
+                                        <p>4g rưỡi rồi tui chưa được ngủ nữa nè, tại ai?????? tại phim dễ thương quá huhu
+                                        </p>
+                                    </div>
+                                    <div class="buttons">
+                                        <button class="btn"><i class="fas fa-thumbs-up"></i> 40</button>
+                                        <button class="btn"><i class="fas fa-flag"></i></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="comment">
+                                <div class="userImg">
+                                    <img src="images/users/user3.jpg" width="100%">
+                                </div>
+                                <div class="commentText">
+                                    <div class="userName">
+                                        <div>
+                                            <h4>Trần Thế Vượng</h4>
+                                        </div>
+                                        <div><small>khoảng 2 ngày trước</small></div>
+                                    </div>
+                                    <div class="content">
+                                        <p>bị thích chị bạn thân nữ cực mạnh luôn vì bạn mà chơi bà chị Lucy hài kinh luôn
+                                        </p>
+                                    </div>
+                                    <div class="buttons">
+                                        <button class="btn"><i class="fas fa-thumbs-up"></i> 40</button>
+                                        <button class="btn"><i class="fas fa-flag"></i></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="comment">
+                                <div class="userImg">
+                                    <img src="images/users/user2.jpg" width="100%">
+                                </div>
+                                <div class="commentText">
+                                    <div class="userName">
+                                        <div>
+                                            <h4>Phạm Văn Thuấn</h4>
+                                        </div>
+                                        <div><small>khoảng 1 tháng trước</small></div>
+                                    </div>
+                                    <div class="content">
+                                        <p>Uây k bt cuối cùng nữ chính có khỏi bệnh k muốn có 1 nụ hôn trọn vẹn</p>
+                                    </div>
+                                    <div class="buttons">
+                                        <button class="btn"><i class="fas fa-thumbs-up"></i> 40</button>
+                                        <button class="btn"><i class="fas fa-flag"></i></button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#">Xem các bình luận trước</a>
+                    </div>
+                </div>
+               
+                <div class="block" style="color: #ffffff">
+                        <div class="block-title">Phim liên quan</div>
+                        <div class="block-content">
+                            <div class="block-element">
+                                <p class="box-icon">Phim mới</p>
+                                <img alt="" src="./images/img2.webp"/>
+                                <p>Quái vật vũ trụ - Phần 3</p>
+                            </div>
+                            <div class="block-element">
+                                <p class="box-icon">Phim mới</p>
+                                <img alt="" src="./images/img3.webp"/>
+                                <p>Bumblebee</p>
+                            </div>
+                            <div class="block-element">
+                                <p class="box-icon">Phim mới</p>
+                                <img alt="" src="./images/img4.webp"/>
+                                <p>Người Dơi</p>
+                            </div>
+                            <div class="block-element">
+                                <p class="box-icon">Phim mới</p>
+                                <img alt="" src="./images/2xdbw8r4ouf64aruwsncckvxovn20-05-2019_11g16-04.webp"/>
+                                <p>Bước chân đầu tiên</p>
+                            </div>
+                            <div class="block-element">
+                                <p class="box-icon">Phim mới</p>
+                                <img alt="" src="./images/1tfvebxqzf3vtnjmnyrskvb2xby-203-10-2019_01g58-33.webp"/>
+                                <p>Aladdin</p>
+                            </div>
+                            <div class="block-element">
+                                    <p class="box-icon">Phim mới</p>
+                                    <img alt="" src="./images/film.jpeg"/>
+                                    <p>PointBlank</p>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="clearfix"></div>
+                <div class="block">
+                        <div class="block-title" style="color: #ffffff">Diễn viên</div>
+                        <div class="block-content spe">
+                            <div class="block-element">
+                                <img alt="" src="./images/actors/truongdaidai28-09-2019_21g33-27.jpg"/>
+                                <p>Trương Đại</p>
+                            </div>
+                            
+                            <div class="block-element">
+                                <img alt="" src="./images/actors/03.jpeg"/>
+                                <p>Châu Nghệ Hiên</p>
+                            </div>
+                            <div class="block-element">
+                                    <img alt="" src="./images/actors/01.jpg"/>
+                                    <p>Hứa Ngụy Châu</p>
+                            </div>
+                            <div class="block-element">
+                                    <img alt="" src="./images/actors/vuong-tu-tuyen-199814-06-2019_15g24-40.jpg"/>
+                                    <p>Vương Mạc Hàm</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </section>
+    <footer>
+        <div class="container">
+                <div class="logo"><img alt="" src="./images/logo.png"/></div>
+                <div class="mid-footer">
+                    <div class="menu">
+                    <ul class = "menu1">
+                        <li>Gói data</li>
+                        <li>Quảng cáo</li>
+                        <li>Dịch vụ</li>
+                        <li>Thỏa thuận</li>
+                        <li>Chính sách</li>
+                    </ul>
+                    <ul class = "menu2">
+                            <li><i class="fab fa-android"></i></li>
+                            <li><i class="fab fa-apple"></i></li>
+                            <li><i class="far fa-bell"></i></li>
+                            <li><i class="far fa-comment"></i></li>
+                            <li><i class="fab fa-amazon-pay"></i></li>
+                    </ul>
+                    <hr>
+                    </div>
+                    <p>Công ty abc-xyz</p>
+                    <p>Địa chỉ: 144 Xuân Thủy - Câù giấy - Hà Nội</p>
+                    <p>Điện thoại: 0999999999</p>
+                </div>
+                <div class="right-footer">
+                        <i class="fab fa-facebook"></i>
+                        <br/>
+                        <p class="ct-ft"><i class="far fa-comment-dots"></i>&nbsp; Ho tro</p>
+                        <br/>
+                        <p class="ct-ft"><i class="fas fa-phone"></i>&nbsp;19006600</p>
+                </div>
+        </div>
+    </footer>
+    <script>
+            var menu = document.querySelector('#menu');
+				var main = document.querySelector('body');
+				var drawer = document.querySelector('.navigation');
+				var input = document.querySelector('.menu_input_form');
+				menu.addEventListener('click', function(e) {
+					drawer.classList.toggle('open');
+					e.stopPropagation();
+				});
+				main.addEventListener('click', function() {
+					drawer.classList.remove('open');
+					
+				});
+        </script>
+</body>
+</html>  
