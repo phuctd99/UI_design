@@ -6,41 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>UI design</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <script src="./js/myjs.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 </head>
 <body>
-    <header>
-        <div class="logo"><img alt="" src="./images/logo.png"/></div>
-        <div class="navigation">
-            <ul>
-                <li>Trang chu</li>
-                <li>Moi nhat</li>
-                <li>Nhieu view nhat</li>
-                <li>Hanh dong</li>
-                <li>Vien tuong</li>
-                <li>Kinh di</li>
-                <li>Hai huoc</li>
-                <li>Tinh cam</li>
-                <li>Khoa hoc</li>
-                <li>Hoat hinh</li>
-            </ul>
-        </div>
-        <div class="user-action">
-            <ul>
-                <li><i class="fas fa-search"></i></li>
-                
-                <li><a href="./login.html">Login</a></li>
-                
-            </ul>
-        </div>
-
-    </header>
+        <header>
+                <div class="logo"><img alt="" src="./images/logo.png"/></div>
+                <div class="menu_bar">
+                        <i class="fas fa-bars" id="menu"></i>
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="./index.html">Trang chủ</a></li>
+                        <li><a href="./index.html">Mới nhất</a></li>
+                        <li><a href="./index.html">Xem nhiều nhất</a></li>
+                        <li class="hid"><a href="./index.html">Phim hành động</a></li>
+                        <li class="hid"><a href="./index.html">Phim viễn tưởng</a></li>
+                        <li class="hid"><a href="./index.html">Phim kinh dị</a></li>
+                        <li class="hid h1"><a href="./index.html">Phim hài hước</a></li>
+                        <li class="hid h1"><a href="./index.html">Phim tình cảm</a></li>
+                        <li class="hid h1"><a href="./index.html">Phim khoa học</a></li>
+                        <li class="hid h1"><a href="./index.html">Phim hoạt hình</a></li>
+                    </ul>
+                </div>
+                <div class="user-action">
+                    <ul>
+                        <li><i class="fas fa-search"></i></li>
+                        <li><a href="./login.html">Đăng nhập</a></li>
+                        <li>    </li>
+                    </ul>
+                </div>
+        
+            </header>
     <div id="main-content">
         <div class="container">
             <div class="form-area">
             
                 <div class="login">
-                    <div class="login-title">Login</div>
+                    <div class="login-title">Đăng nhập</div>
                     <div class="inner">
                         <div class="form-group">
                                 <input  type="text" value="" placeholder="Điện thoại" class="form-control">
@@ -48,10 +56,10 @@
                         <div class="form-group">
                                 <input  type="text" value="" placeholder="Điện thoại" class="form-control">
                         </div>
-                        <button class="btn btn-login">Login</button>
+                        <button class="btn btn-login">Đăng nhập</button>
                         <div class="text-area">
-                            <a href="#">Forget Password?</a>
-                            <p>Or</p>
+                            <a href="#">Quên mật khẩu?</a>
+                            <p>Hoặc</p>
                         </div>
                         <div class="bt-group">
                             <button class="btn btn-facebook">Facebook</button>
@@ -69,64 +77,47 @@
                 <div class="mid-footer">
                     <div class="menu">
                     <ul class = "menu1">
-                        <li>Goi data</li>
-                        <li>Quang cao</li>
-                        <li>Dich vu</li>
-                        <li>Thoa thuan</li>
-                        <li>Chinh sach</li>
+                        <li>Gói data</li>
+                        <li>Quảng cáo</li>
+                        <li>Dịch vụ</li>
+                        <li>Thỏa thuận</li>
+                        <li>Chính sách</li>
                     </ul>
                     <ul class = "menu2">
                             <li><i class="fab fa-android"></i></li>
-                            <li><i class="fab fa-android"></i></li>
-                            <li><i class="fab fa-android"></i></li>
-                            <li><i class="fab fa-android"></i></li>
-                            <li><i class="fab fa-android"></i></li>
+                            <li><i class="fab fa-apple"></i></li>
+                            <li><i class="far fa-bell"></i></li>
+                            <li><i class="far fa-comment"></i></li>
+                            <li><i class="fab fa-amazon-pay"></i></li>
                     </ul>
                     <hr>
                     </div>
-                    <p>Cong ty abc-xyz</p>
-                    <p>Dia chi: HoTungMau Hanoi</p>
-                    <p>Dien thoai: 0999999999</p>
+                    <p>Công ty abc-xyz</p>
+                    <p>Địa chỉ: 144 Xuân Thủy - Câù giấy - Hà Nội</p>
+                    <p>Điện thoại: 0999999999</p>
                 </div>
                 <div class="right-footer">
                         <i class="fab fa-facebook"></i>
                         <br/>
-                        <p>Ho tro</p>
+                        <p class="ct-ft"><i class="far fa-comment-dots"></i>&nbsp; Ho tro</p>
                         <br/>
-                        <p>19006600</p>
+                        <p class="ct-ft"><i class="fas fa-phone"></i>&nbsp;19006600</p>
                 </div>
         </div>
     </footer>
     <script>
-        function background_slideshow(){
-	
-            function slider(){
-            setTimeout(function(){
-                document.querySelector('.slide-image').src = "./images/banner.jpg";
-                document.querySelector('.slide-content').innerHTML = "<h2>WarCraft3</h2><p>Fight or Death</p><p>Warcraft III: Reforged is a stunning reimagining of the revolutionary real-time strategy game that laid the groundwork for Azeroth's</p>"
-            }, 0000);
-            //
-            setTimeout(function(){
-                document.querySelector('.slide-image').src = "./images/banner2.jpg";
-                document.querySelector('.slide-content').innerHTML = "<h2>THeHobbit</h2><p>Fight or Death</p><p>A reluctant Hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain home</p>"
-            }, 5000);
-            
-            //
-            setTimeout(function(){
-                document.querySelector('.slide-image').src = "./images/banner3.jpg";
-                document.querySelector('.slide-content').innerHTML = "<h2>PowerInMyHand</h2><p>Fight or Death</p><p>The book was first published on September 21, 1937 and is set in the years 2941 to ...</p>"
-            }, 10000);
-            };
-            slider();
-            setInterval(function() { // repeat
-
-                slider();
-
-            }, 15000);
-	
-        }
-	    background_slideshow();//goi ham slideshow de chay
-    
-    </script>
+            var menu = document.querySelector('#menu');
+				var main = document.querySelector('body');
+				var drawer = document.querySelector('.navigation');
+				var input = document.querySelector('.menu_input_form');
+				menu.addEventListener('click', function(e) {
+					drawer.classList.toggle('open');
+					e.stopPropagation();
+				});
+				main.addEventListener('click', function() {
+					drawer.classList.remove('open');
+					
+				});
+        </script>
 </body>
 </html>  
