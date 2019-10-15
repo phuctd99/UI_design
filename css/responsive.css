@@ -53,7 +53,10 @@
 	}
 	.navigation{
 		transform: translate(-500px,50px);
-	}
+    }
+    .navigation.open ul{
+        overflow: visible;
+    }
 	.navigation.open ul li{
 		width: 45%;
 		padding-left: 10px;
@@ -91,18 +94,6 @@
     }
 
     /**/
-    .playerFooter ul li{
-        width:16% !important;
-    }
-    .container .filmInfo .filmDescribe{
-       width: 60%;
-    }
-    .describe{
-        display: none;
-    }
-    #btn{
-        display: none;
-    }
 
 
 }

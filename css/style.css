@@ -75,7 +75,6 @@ header{
 
 
 .pagination {
-  width: 400px;
   margin-bottom: 100px;
   margin-left: 0;
 }
@@ -99,7 +98,11 @@ header{
 }
 /* ----------------------------------------------------------------------------- */
 .logo{
-    margin: 12px 20px;
+    margin: 10px 25px;
+    
+}
+.logo >img{
+    max-width: 130px;
 }
 .menu_bar{
     display: none;
@@ -111,6 +114,8 @@ header{
 }
 .navigation ul{
     margin: 0px;
+    height: 60px;
+    overflow: hidden;
 }
 .navigation ul li{
     list-style: none;
@@ -211,6 +216,15 @@ header{
     margin: 20px 0px;
     font-weight: bold;
     font-size: 24px;
+    display: inline;
+}
+.view-more{
+    float: right;
+
+}
+.view-more:hover >a{
+    color: Rgb(23, 129, 194);
+    
 }
 .block-content{
     display: flex;
@@ -356,8 +370,11 @@ footer > .container{
     outline: none;
     padding-left: 10px;
 }
+.text-area{
+    margin-top:20px;
+}
 .bt-group{
-    margin: 40px auto;
+    margin: 30px auto;
 }
 .btn{
     width: 76%;

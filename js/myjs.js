@@ -3,19 +3,19 @@
 	
             function slider(){
             setTimeout(function(){
-                document.querySelector('.slide-image').src = "./images/bay-nam10-10-2019_10g23-00.webp";
-                document.querySelector('.slide-content').innerHTML = "<h2 class='ct-bn-1'>Bảy năm vẫn ngoảnh về phương bắc</h2><p class='ct-bn-2'>Fight or Death</p><p class='ct-bn-3'>Warcraft III: Reforged is a stunning reimagining of the revolutionary real-time strategy game that laid the groundwork for Azeroth's</p>"
+                document.querySelector('.slide-image').src = "./images/banner4.jpg";
+                document.querySelector('.slide-content').innerHTML = "<h2 class='ct-bn-1'>Dị nhân: Ngày cũ của tương lai</h2><p class='ct-bn-2'>Fight or Death</p><p class='ct-bn-3'>Vượt qua nỗi đau để  mạnh mẽ hơn</p>"
             }, 0000);
             //
             setTimeout(function(){
-                document.querySelector('.slide-image').src = "./images/b.webp";
-                document.querySelector('.slide-content').innerHTML = "<h2 class='ct-bn-1'>Vô cùng thích anh</h2><p class='ct-bn-2'>Fight or Death</p><p class='ct-bn-3'>A reluctant Hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain home</p>"
+                document.querySelector('.slide-image').src = "./images/banner.jpg";
+                document.querySelector('.slide-content').innerHTML = "<h2 class='ct-bn-1'>Căn phòng khóa kín</h2><p class='ct-bn-2'>Escape the room</p><p class='ct-bn-3'>Bộ phim Căn Phòng Khóa Kín kể về người đàn ông lạnh lùng có tài mở khóa kỳ lạ đã ...</p>"
             }, 5000);
             
             //
             setTimeout(function(){
                 document.querySelector('.slide-image').src = "./images/banner2.webp";
-                document.querySelector('.slide-content').innerHTML = "<h2 class='ct-bn-1'>Tiểu sử chàng Nokdu</h2><p class='ct-bn-2'>Fight or Death</p><p class='ct-bn-3'>The book was first published on September 21, 1937 and is set in the years 2941 to ...</p>"
+                document.querySelector('.slide-content').innerHTML = "<h2 class='ct-bn-1'>Tiểu sử chàng Nokdu</h2><p class='ct-bn-2'>Story of love</p><p class='ct-bn-3'>Tiểu Sử Chàng Nokdu xoay quanh chàng trai Jeon Nokdu (Jang Dong Yoon) ...</p>"
             }, 10000);
             };
             slider();
