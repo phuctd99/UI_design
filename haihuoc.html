@@ -9,31 +9,47 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/responsive.css">
   <script src="./js/myjs.js"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 </head>
 
 <body>
-
+  <a id="BTTbutton"></a>
+  <script>
+    var btn = $('#BTTbutton');
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+      } else {
+        btn.removeClass('show');
+      }
+    });
+    btn.on('click', function (e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: 0 }, '300');
+    });
+  </script>
   <header>
     <div class="logo"><img alt="" src="./images/logo.png" /></div>
     <div class="menu_bar">
       <i class="fas fa-bars" id="menu"></i>
     </div>
     <div class="navigation">
-            <ul>
-                    <li><a href="./index.html">Trang chủ</a></li>
-                    <li><a href="./category.html">Mới nhất</a></li>
-                    <li><a href="./category.html">Xem nhiều nhất</a></li>
-                    <li class="hid"><a href="./action.html">Phim hành động</a></li>
-                    <li class="hid"><a href="./vientuong.html">Phim viễn tưởng</a></li>
-                    <li class="hid"><a href="./kinhdi.html">Phim kinh dị</a></li>
-                    <li class="hid h1"><a href="./haihuoc.html">Phim hài hước</a></li>
-                    <li class="hid h1"><a href="./love.html">Phim tình cảm</a></li>
-                    <li class="hid h1"><a href="./love.html">Phim khoa học</a></li>
-                    <li class="hid h1"><a href="./love.html">Phim hoạt hình</a></li>
-                </ul>
+      <ul>
+        <li><a href="./index.html">Trang chủ</a></li>
+        <li><a href="./category.html">Mới nhất</a></li>
+        <li><a href="./category.html">Xem nhiều nhất</a></li>
+        <li class="hid"><a href="./action.html">Phim hành động</a></li>
+        <li class="hid"><a href="./vientuong.html">Phim viễn tưởng</a></li>
+        <li class="hid"><a href="./kinhdi.html">Phim kinh dị</a></li>
+        <li class="hid h1"><a href="./haihuoc.html">Phim hài hước</a></li>
+        <li class="hid h1"><a href="./love.html">Phim tình cảm</a></li>
+        <li class="hid h1"><a href="./love.html">Phim khoa học</a></li>
+        <li class="hid h1"><a href="./love.html">Phim hoạt hình</a></li>
+      </ul>
     </div>
     <div class="user-action">
       <ul>
@@ -48,109 +64,109 @@
   <div class="main_content">
     <div class="container">
 
-    <div class="block">
-      <div class="block-title">Phim Hài Hước</div>
-      <div class="block-content">
+      <div class="block">
+        <div class="block-title">Phim Hài Hước</div>
+        <div class="block-content">
 
-        <a href="./watch.html">
-          <div class="block-element">
-            <img alt="" src=".\images\category\phim_hai_huoc\3-chang-ngoc.webp" />
-            <p>Ba chàng ngốc</p>
-          </div>
-        </a>
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\3-chang-ngoc.webp" />
+              <p>Ba chàng ngốc</p>
+            </div>
+          </a>
 
-        <a href="./watch.html">
-          <div class="block-element">
-            <img alt="" src=".\images\category\phim_hai_huoc\cap-doi-lay-loi.webp" />
-            <p>Cặp đôi lầy lội</p>
-          </div>
-        </a>
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\cap-doi-lay-loi.webp" />
+              <p>Cặp đôi lầy lội</p>
+            </div>
+          </a>
 
-        <a href="./watch.html">
-          <div class="block-element">
-            <img alt="" src=".\images\category\phim_hai_huoc\dang-cap-thu-cung.webp" />
-            <p>Dẳng cấp thú cưng</p>
-          </div>
-        </a>
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\dang-cap-thu-cung.webp" />
+              <p>Dẳng cấp thú cưng</p>
+            </div>
+          </a>
 
-        <a href="./watch.html">
-          <div class="block-element">
-            <img alt="" src=".\images\category\phim_hai_huoc\hac-bang-doi-nghe.webp" />
-            <p>Hắc bang đổi nghề</p>
-          </div>
-        </a>
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\hac-bang-doi-nghe.webp" />
+              <p>Hắc bang đổi nghề</p>
+            </div>
+          </a>
 
-        <a href="./watch.html">
-          <div class="block-element">
-            <img alt="" src=".\images\category\phim_hai_huoc\ngay_tuu_truong.webp" />
-            <p>Ngày tựu trường</p>
-          </div>
-        </a>
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\ngay_tuu_truong.webp" />
+              <p>Ngày tựu trường</p>
+            </div>
+          </a>
 
-        <a href="./watch.html">
-          <div class="block-element">
-            <img alt="" src=".\images\category\phim_hai_huoc\nguoi-quen-xa-la.webp" />
-            <p>Người quen xa lạ</p>
-          </div>
-        </a>
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\nguoi-quen-xa-la.webp" />
+              <p>Người quen xa lạ</p>
+            </div>
+          </a>
 
-        <a href="./watch.html">
-          <div class="block-element">
-            <img alt="" src=".\images\category\phim_hai_huoc\nha-co-6-anh-em.webp" />
-            <p>Nhà có 6 anh em</p>
-          </div>
-        </a>
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\nha-co-6-anh-em.webp" />
+              <p>Nhà có 6 anh em</p>
+            </div>
+          </a>
 
-        <a href="./watch.html">
-          <div class="block-element">
-            <img alt="" src=".\images\category\phim_hai_huoc\phong-van-ngoi-sao.webp" />
-            <p>Phỏng vấn ngôi sao</p>
-          </div>
-        </a>
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\phong-van-ngoi-sao.webp" />
+              <p>Phỏng vấn ngôi sao</p>
+            </div>
+          </a>
 
-        <a href="./watch.html">
-          <div class="block-element">
-            <img alt="" src=".\images\category\phim_hai_huoc\thang-em-ly-tuong.webp" />
-            <p>Thằng em lý tưởng</p>
-          </div>
-        </a>
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\thang-em-ly-tuong.webp" />
+              <p>Thằng em lý tưởng</p>
+            </div>
+          </a>
 
-        <a href="./watch.html">
-          <div class="block-element">
-            <img alt="" src=".\images\category\phim_hai_huoc\thang-ngo-tap-yeu.webp" />
-            <p>Thằng ngố tập yêu</p>
-          </div>
-        </a>
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\thang-ngo-tap-yeu.webp" />
+              <p>Thằng ngố tập yêu</p>
+            </div>
+          </a>
 
-        <a href="./watch.html">
-          <div class="block-element">
-            <img alt="" src=".\images\category\phim_hai_huoc\tu-dai-gia.webp" />
-            <p>Tứ đại gia</p>
-          </div>
-        </a>
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\tu-dai-gia.webp" />
+              <p>Tứ đại gia</p>
+            </div>
+          </a>
 
-        <a href="./watch.html">
-          <div class="block-element">
-            <img alt="" src=".\images\category\phim_hai_huoc\xin-choa-quy-ong-ty-phu.webp" />
-            <p>Xin chào quý ông tỷ phú</p>
-          </div>
-        </a>
+          <a href="./watch.html">
+            <div class="block-element">
+              <img alt="" src=".\images\category\phim_hai_huoc\xin-choa-quy-ong-ty-phu.webp" />
+              <p>Xin chào quý ông tỷ phú</p>
+            </div>
+          </a>
 
+        </div>
+      </div>
+
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a class="active" href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a href="#">&raquo;</a>
       </div>
     </div>
-
-    <div class="pagination">
-      <a href="#">&laquo;</a>
-      <a class="active" href="#">1</a>
-      <a href="#">2</a>
-      <a href="#">3</a>
-      <a href="#">4</a>
-      <a href="#">5</a>
-      <a href="#">6</a>
-      <a href="#">7</a>
-      <a href="#">&raquo;</a>
-    </div>
-  </div>
   </div>
 
   <footer>
@@ -178,7 +194,7 @@
         <hr>
         <br />
         <p>Công ty abc-xyz</p>
-        <p>Địa chỉ: 144 Xuân Thủy - Câù giấy - Hà Nội</p>
+        <p>Địa chỉ: 144 Xuân Thủy - Cầu Giấy - Hà Nội</p>
         <p>Điện thoại: 0999999999</p>
       </div>
       <div class="right-footer">
@@ -187,7 +203,7 @@
         <i class="fab fa-twitter"></i>
         <i class="fab fa-youtube"></i>
         <br />
-        <p class="ct-ft"><i class="far fa-comment-dots"></i>&nbsp; Ho tro</p>
+        <p class="ct-ft"><i class="far fa-comment-dots"></i>&nbsp; Hỗ trợ</p>
         <br />
         <p class="ct-ft"><i class="fas fa-phone"></i>&nbsp;19006600</p>
       </div>
@@ -198,11 +214,11 @@
     var main = document.querySelector('body');
     var drawer = document.querySelector('.navigation');
     var input = document.querySelector('.menu_input_form');
-    menu.addEventListener('click', function(e) {
+    menu.addEventListener('click', function (e) {
       drawer.classList.toggle('open');
       e.stopPropagation();
     });
-    main.addEventListener('click', function() {
+    main.addEventListener('click', function () {
       drawer.classList.remove('open');
 
     });
